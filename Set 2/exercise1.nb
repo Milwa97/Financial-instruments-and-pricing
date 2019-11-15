@@ -1,0 +1,1358 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     51120,       1350]
+NotebookOptionsPosition[     45599,       1264]
+NotebookOutlinePosition[     45932,       1279]
+CellTagsIndexPosition[     45889,       1276]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "EXERCISE", " ", "1", " ", "A"}], " ", "**)"}],
+  FontSize->24,
+  FontColor->RGBColor[0.6, 0.4, 0.2],
+  Background->RGBColor[1, 0.925, 0.925]]], "Input",
+ CellChangeTimes->{{3.782219915425313*^9, 3.78221992451513*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"d38908f4-0090-4112-a740-d0c9a96a6bc5"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"P", " ", "=", " ", "10000"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"r", " ", "=", " ", "0.1"}], " ", ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"frequency", " ", "=", " ", "1.0"}], " ", ";"}]}], "Input",
+ CellLabel->"In[2]:=",ExpressionUUID->"6039d5a5-1e3e-47e8-8d9d-70dd5da4bfb3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{
+      RowBox[{"30", "/", "360"}], " ", "US"}]}]}], " ", "**)"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"28.02", ".2017"}], " ", "-", " ", 
+    RowBox[{"28.02", ".2018"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Years", " ", "=", " ", 
+     RowBox[{"2018", "-", "2017"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Months", " ", "=", " ", 
+     RowBox[{"2", " ", "-", " ", "2"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Days", " ", "=", " ", 
+     RowBox[{"30", " ", "-", " ", "30"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dayCount", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
+      RowBox[{"\[CapitalDelta]Months", "*", "30"}], " ", "+", 
+      "\[CapitalDelta]Days"}]}], "  ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{"dayCount", " ", "/", " ", "360"}]}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2018"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2019"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Years", " ", "=", " ", 
+     RowBox[{"2019", "-", "2018"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Months", " ", "=", " ", 
+     RowBox[{"2", " ", "-", " ", "2"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Days", " ", "=", " ", 
+     RowBox[{"30", " ", "-", " ", "30"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dayCount", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
+      RowBox[{"\[CapitalDelta]Months", "*", "30"}], " ", "+", 
+      "\[CapitalDelta]Days"}]}], "  ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{"dayCount", " ", "/", " ", "360"}]}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2019"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2020"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Years", " ", "=", " ", 
+     RowBox[{"2020", "-", "2019"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Months", " ", "=", " ", 
+     RowBox[{"2", " ", "-", " ", "2"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Days", " ", "=", " ", 
+     RowBox[{"30", " ", "-", " ", "30"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dayCount", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
+      RowBox[{"\[CapitalDelta]Months", "*", "30"}], "+", 
+      "\[CapitalDelta]Days"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{"dayCount", " ", "/", " ", "360"}]}]}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.782219912885253*^9, 3.782219913318327*^9}, {
+  3.782219988935493*^9, 3.7822200459944572`*^9}, {3.782220079686399*^9, 
+  3.782220174427475*^9}, {3.782220207608284*^9, 3.7822202331613903`*^9}, {
+  3.782220307035536*^9, 3.782220387377544*^9}, {3.7822215084685926`*^9, 
+  3.782221535876289*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"ca2f15eb-cb9e-4cf2-a93f-5c70b9d87f19"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{{3.782220378125606*^9, 3.782220389392189*^9}, 
+   3.782221536254586*^9, 3.7823066308678293`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"42bbac20-0c03-49da-922b-59d24339a839"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{{3.782220378125606*^9, 3.782220389392189*^9}, 
+   3.782221536254586*^9, 3.7823066308694973`*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"6da4e128-fe82-4516-8378-a953b06eee4b"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{{3.782220378125606*^9, 3.782220389392189*^9}, 
+   3.782221536254586*^9, 3.782306630871722*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"fd00c79b-0c3b-479e-be86-d5510a15313a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{"30", 
+      RowBox[{"E", "/", "360"}]}]}]}], " ", "**)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"28.02", ".2017"}], " ", "-", " ", 
+    RowBox[{"28.02", ".2018"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Years", " ", "=", " ", 
+     RowBox[{"2018", "-", "2017"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Months", " ", "=", " ", 
+     RowBox[{"2", " ", "-", " ", "2"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Days", " ", "=", " ", 
+     RowBox[{"28", " ", "-", " ", "28"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dayCount", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
+      RowBox[{"\[CapitalDelta]Months", "*", "30"}], " ", "+", 
+      "\[CapitalDelta]Days"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{"dayCount", " ", "/", " ", "360"}]}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2018"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2019"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Years", " ", "=", " ", 
+     RowBox[{"2019", "-", "2018"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Months", " ", "=", " ", 
+     RowBox[{"2", " ", "-", " ", "2"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Days", " ", "=", " ", 
+     RowBox[{"28", " ", "-", " ", "28"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dayCount", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
+      RowBox[{"\[CapitalDelta]Months", "*", "30"}], "+", 
+      "\[CapitalDelta]Days"}]}], "  ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{"dayCount", " ", "/", " ", "360"}]}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2019"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2020"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Years", " ", "=", " ", 
+     RowBox[{"2020", "-", "2019"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Months", " ", "=", " ", 
+     RowBox[{"2", " ", "-", " ", "2"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Days", " ", "=", " ", 
+     RowBox[{"29", " ", "-", " ", "28"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"dayCount", " ", "=", " ", 
+    RowBox[{
+     RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
+     RowBox[{"\[CapitalDelta]Months", "*", "30"}], " ", "+", 
+     "\[CapitalDelta]Days"}]}], " ", "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{"dayCount", " ", "/", " ", "360"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.782220052291046*^9, 3.782220073569643*^9}, {
+  3.782220403626709*^9, 3.7822204634558573`*^9}, {3.78222146348285*^9, 
+  3.782221503289234*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"83393306-aa5a-4e40-a3a4-2d0c6329f1b3"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{{3.7822204536141243`*^9, 3.782220465680663*^9}, {
+   3.7822214638467607`*^9, 3.782221491749839*^9}, 3.782306630896068*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"8f25dbcb-e0ee-411d-a48a-a4c07667504b"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{{3.7822204536141243`*^9, 3.782220465680663*^9}, {
+   3.7822214638467607`*^9, 3.782221491749839*^9}, 3.782306630898036*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"df26ba64-ca8f-4e27-8bc6-e0b05e594c22"],
+
+Cell[BoxData["361"], "Output",
+ CellChangeTimes->{{3.7822204536141243`*^9, 3.782220465680663*^9}, {
+   3.7822214638467607`*^9, 3.782221491749839*^9}, 3.782306630899611*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"9ed51e92-3eb5-4a5d-8aed-07d4d522df56"],
+
+Cell[BoxData["1002.7777777777777`"], "Output",
+ CellChangeTimes->{{3.7822204536141243`*^9, 3.782220465680663*^9}, {
+   3.7822214638467607`*^9, 3.782221491749839*^9}, 3.7823066309014*^9},
+ CellLabel->"Out[34]=",ExpressionUUID->"491d320d-319c-4b7f-b711-fad9c81b3b43"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.782220522243565*^9, 3.782220533658897*^9}, {
+  3.7823066192473516`*^9, 3.7823066195639353`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"5a942909-9516-4bc7-bb8f-7f824b564bba"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{
+      RowBox[{"ACT", "/", "ACT"}], " ", 
+      RowBox[{"(", "ICMA", ")"}]}]}]}], " ", "**)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"28.02", ".2017"}], " ", "-", " ", 
+    RowBox[{"28.02", ".2018"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2018"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2019"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2019"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2020"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r"}]}]}]}]], "Input",
+ CellChangeTimes->{
+  3.782220516509365*^9, {3.782221169096698*^9, 3.782221169686964*^9}, {
+   3.782221201361733*^9, 3.782221214693376*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"787bcd29-4bb2-417e-b0d4-2850b9b25271"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{3.782217236775113*^9, 3.782221215305979*^9, 
+  3.782306630960753*^9},
+ CellLabel->"Out[36]=",ExpressionUUID->"eb9c5cf8-6581-4383-aa25-80f3898c4fb4"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{3.782217236775113*^9, 3.782221215305979*^9, 
+  3.7823066309717207`*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"c6f4aba5-bcb2-48d2-a497-e38bf7a33c0b"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{3.782217236775113*^9, 3.782221215305979*^9, 
+  3.7823066309751253`*^9},
+ CellLabel->"Out[38]=",ExpressionUUID->"9d93ca6e-42a4-40cc-b3dc-2ac0312f9e57"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{"ACT", " ", "365", " ", 
+      RowBox[{"(", "fixed", ")"}]}]}]}], " ", "**)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"28.02", ".2017"}], " ", "-", " ", 
+    RowBox[{"28.02", ".2018"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"dayCount", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2017", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2018", ",", "2", ",", "28"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{
+      RowBox[{"dayCount", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "/", " ", "365"}]}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2018"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2019"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"dayCount", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2018", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "2", ",", "28"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{
+      RowBox[{"dayCount", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], " ", "/", " ", "365"}]}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2019"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2020"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"dayCount", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2020", ",", "2", ",", "29"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{
+      RowBox[{"dayCount", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], " ", "/", " ", "365"}]}]}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.7823067518376637`*^9, 3.782306766523862*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"6acc879a-0c99-44a2-9f2b-6feacfa1e38a"],
+
+Cell[BoxData[
+ TemplateBox[{"365","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.782306767050164*^9},
+ CellLabel->"Out[45]=",ExpressionUUID->"b5a570e6-f132-40fb-b261-e050b16e632d"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{3.782306767058922*^9},
+ CellLabel->"Out[46]=",ExpressionUUID->"d2e297cf-85e3-4d95-a61b-1f94297446a5"],
+
+Cell[BoxData[
+ TemplateBox[{"365","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.782306767064423*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"1be3ad42-781e-4341-9697-1bbd69d416a3"],
+
+Cell[BoxData["1000.`"], "Output",
+ CellChangeTimes->{3.782306767069878*^9},
+ CellLabel->"Out[48]=",ExpressionUUID->"838c56e0-be5c-442e-a7e0-6f370036d63f"],
+
+Cell[BoxData[
+ TemplateBox[{"366","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.782306767073275*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"47fea1df-2d4a-4530-88d2-c777caf48409"],
+
+Cell[BoxData["1002.7397260273974`"], "Output",
+ CellChangeTimes->{3.7823067670780697`*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"dc3c4b16-4518-4361-be95-0e0d5ac4123a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{"ACT", " ", "360"}]}]}], " ", "**)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"28.02", ".2017"}], " ", "-", " ", 
+    RowBox[{"28.02", ".2018"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"dayCount", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2017", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2018", ",", "2", ",", "28"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{
+      RowBox[{"dayCount", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "/", " ", "360"}]}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2018"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2019"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"dayCount", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2018", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "2", ",", "28"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{
+      RowBox[{"dayCount", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], " ", "/", " ", "360"}]}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"28.02", ".2019"}], " ", "-", " ", 
+     RowBox[{"28.02", ".2020"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"dayCount", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2020", ",", "2", ",", "29"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{
+      RowBox[{"dayCount", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], " ", "/", " ", 
+      "360"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.782220732834632*^9, 3.782220738881433*^9}, {
+  3.782220871567651*^9, 3.782220923151753*^9}, {3.782221084219543*^9, 
+  3.782221134310522*^9}, {3.782306518416657*^9, 3.7823065274518843`*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"71c175ac-861c-4b1b-8211-04e0b70c680f"],
+
+Cell[BoxData[
+ TemplateBox[{"365","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{
+  3.78222092385557*^9, {3.7822210911642723`*^9, 3.782221134968565*^9}, 
+   3.782221550751541*^9, 3.7823066317911663`*^9},
+ CellLabel->"Out[39]=",ExpressionUUID->"58c01b56-5f5f-4619-9eef-73d26e3ed395"],
+
+Cell[BoxData["1013.8888888888888`"], "Output",
+ CellChangeTimes->{
+  3.78222092385557*^9, {3.7822210911642723`*^9, 3.782221134968565*^9}, 
+   3.782221550751541*^9, 3.782306631797991*^9},
+ CellLabel->"Out[40]=",ExpressionUUID->"6b67b390-03b1-4fd1-aa2c-cf89c94c9f72"],
+
+Cell[BoxData[
+ TemplateBox[{"365","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{
+  3.78222092385557*^9, {3.7822210911642723`*^9, 3.782221134968565*^9}, 
+   3.782221550751541*^9, 3.782306631799695*^9},
+ CellLabel->"Out[41]=",ExpressionUUID->"61d32eeb-5dfe-4741-b966-7a1f84a7e40f"],
+
+Cell[BoxData["1013.8888888888888`"], "Output",
+ CellChangeTimes->{
+  3.78222092385557*^9, {3.7822210911642723`*^9, 3.782221134968565*^9}, 
+   3.782221550751541*^9, 3.782306631802721*^9},
+ CellLabel->"Out[42]=",ExpressionUUID->"0efaad42-dfb4-4e80-9a7e-2610393c022a"],
+
+Cell[BoxData[
+ TemplateBox[{"366","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{
+  3.78222092385557*^9, {3.7822210911642723`*^9, 3.782221134968565*^9}, 
+   3.782221550751541*^9, 3.782306631804384*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"11939cd4-c208-4c27-921a-f97c824418e0"],
+
+Cell[BoxData["1016.6666666666666`"], "Output",
+ CellChangeTimes->{
+  3.78222092385557*^9, {3.7822210911642723`*^9, 3.782221134968565*^9}, 
+   3.782221550751541*^9, 3.78230663180799*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"e36c3104-d53f-4e3d-9080-8ce91e83c3af"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"(*", 
+    RowBox[{"*", " ", "EXERCISE", " ", "1", " ", "B"}], " ", "**)"}],
+   FontSize->24,
+   FontColor->RGBColor[0.6, 0.4, 0.2],
+   Background->RGBColor[1, 0.925, 0.925]], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24,
+   FontColor->RGBColor[0.6, 0.4, 0.2],
+   Background->RGBColor[1, 0.925, 0.925]], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24,
+   FontColor->RGBColor[0.6, 0.4, 0.2],
+   Background->RGBColor[1, 0.925, 0.925]], 
+  StyleBox[
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"Consider", " ", "a", " ", "10"}], "-", 
+       RowBox[{
+       "year", " ", "bond", " ", "with", " ", "maturity", " ", "on", " ", 
+        "29", "th", " ", "February", " ", "2020.", " ", "The", " ", "bond", 
+        " ", "has", " ", "nominal"}]}], "\n", 
+      RowBox[{
+      "value", " ", "of", " ", "10", " ", "000", " ", "EUR", " ", "and", " ", 
+       "coupon", " ", "rate", " ", "of", " ", "10", 
+       RowBox[{"%", ".", "Coupons"}], " ", "are", " ", "paid", " ", 
+       "annually", " ", "in", " ", "the", " ", "end", " ", "of"}], "\n", 
+      "February", " ", 
+      RowBox[{
+       RowBox[{"(", "EOM", ")"}], ".", " ", "For"}], " ", "a", " ", 
+      "transaction", " ", "done", " ", "on", " ", "the", " ", "17", " ", "th",
+       " ", "October", " ", "2019", " ", "the", " ", "clean", " ", "price", 
+      " ", "was", " ", "99"}], ",", 
+     RowBox[{
+     "80.", " ", "\n", "Compute", " ", "accrued", " ", "interest", " ", "and",
+       " ", "dirty", " ", "price", " ", 
+      RowBox[{"(", 
+       RowBox[{"cash", " ", "flow"}], ")"}], " ", "paid", " ", "on", " ", 
+      "the", " ", "spot", " ", "date", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"D", "+", "2"}], ")"}], "."}]}]}], " ", "*)"}],
+   FontSize->18,
+   FontColor->RGBColor[0.6, 0.4, 0.2],
+   Background->RGBColor[1, 0.925, 0.925]], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->18,
+   FontColor->RGBColor[0.6, 0.4, 0.2],
+   Background->RGBColor[1, 0.925, 0.925]], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->18,
+   FontColor->GrayLevel[0],
+   Background->RGBColor[1, 0.925, 0.925]], 
+  StyleBox[
+   StyleBox[" ", "Subsection",
+    FontWeight->"Plain",
+    FontColor->GrayLevel[0]],
+   FontSize->16,
+   FontColor->GrayLevel[0]], 
+  RowBox[{
+   StyleBox[
+    StyleBox[
+     StyleBox[
+      RowBox[{"(", "*"}]], "Subsection",
+     FontSize->18,
+     FontWeight->"Plain",
+     FontColor->GrayLevel[0]],
+    FontSize->16,
+    FontColor->GrayLevel[0]], 
+   RowBox[{
+    StyleBox[
+     StyleBox[
+      RowBox[{"*", " ", "The", " ", "spot", " ", "date", 
+       RowBox[{"(", 
+        RowBox[{"D", "+", "2"}], ")"}], " ", "in", " ", "case", " ", "of", 
+       " ", "17", "th", " ", "of", " ", "October", " ", 
+       RowBox[{"(", "Thursday", ")"}], " ", "is", " ", "21", "th", " ", "of", 
+       " ", "October", " ", 
+       RowBox[{"(", "Monday", ")"}], "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", 
+       StyleBox[
+        RowBox[{
+         StyleBox[
+          StyleBox[" ", "Section",
+           FontSize->18,
+           FontWeight->"Plain",
+           FontColor->GrayLevel[0],
+           Background->GrayLevel[0.85]], "Section",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0],
+          Background->GrayLevel[0.85]], 
+         StyleBox[
+          StyleBox[
+           StyleBox[" ", "Section",
+            FontSize->18,
+            FontWeight->"Plain",
+            FontColor->GrayLevel[0],
+            Background->GrayLevel[0.85]], "Section",
+           FontSize->18,
+           FontWeight->"Plain",
+           FontColor->GrayLevel[0],
+           Background->GrayLevel[0.85]], "Section",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0],
+          Background->GrayLevel[0.85]]}]], 
+       StyleBox[
+        RowBox[{
+         StyleBox["  ", "Section",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0],
+          Background->GrayLevel[0.85]], 
+         StyleBox[
+          StyleBox[
+           StyleBox[" ", "Section",
+            FontSize->18,
+            FontWeight->"Plain",
+            FontColor->GrayLevel[0],
+            Background->GrayLevel[0.85]], "Section",
+           FontSize->18,
+           FontWeight->"Plain",
+           FontColor->GrayLevel[0],
+           Background->GrayLevel[0.85]], "Section",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0],
+          Background->GrayLevel[0.85]]}]], "date1"}], "Subsection",
+      FontSize->18,
+      FontWeight->"Plain",
+      FontColor->GrayLevel[0]],
+     FontSize->16,
+     FontColor->GrayLevel[0]], 
+    StyleBox[
+     StyleBox[" ", "Subsection",
+      FontSize->18,
+      FontWeight->"Plain",
+      FontColor->GrayLevel[0]],
+     FontSize->16,
+     FontColor->GrayLevel[0]], 
+    StyleBox[
+     StyleBox["=", "Subsection",
+      FontSize->18,
+      FontWeight->"Plain",
+      FontColor->GrayLevel[0]],
+     FontSize->16,
+     FontColor->GrayLevel[0]], 
+    StyleBox[
+     StyleBox[" ", "Subsection",
+      FontSize->18,
+      FontWeight->"Plain",
+      FontColor->GrayLevel[0]],
+     FontSize->16,
+     FontColor->GrayLevel[0]], 
+    RowBox[{
+     StyleBox[
+      StyleBox[
+       RowBox[{
+        RowBox[{"28.02", ".2019"}], " ", "-", " ", 
+        RowBox[{
+        "starting", " ", "date", " ", "for", " ", "the", " ", "accrual", 
+         StyleBox[
+          StyleBox[
+           StyleBox[
+            StyleBox[
+             StyleBox["\[IndentingNewLine]", "Section",
+              FontSize->18,
+              FontWeight->"Plain",
+              FontColor->GrayLevel[0],
+              Background->GrayLevel[0.85]], "Section",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0],
+             Background->GrayLevel[0.85]], "Section",
+            FontSize->18,
+            FontWeight->"Plain",
+            FontColor->GrayLevel[0],
+            Background->GrayLevel[0.85]], "Section",
+           FontSize->18,
+           FontWeight->"Plain",
+           FontColor->GrayLevel[0],
+           Background->GrayLevel[0.85]], "Section",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0],
+          Background->GrayLevel[0.85]], "date2"}]}], "Subsection",
+       FontSize->18,
+       FontWeight->"Plain",
+       FontColor->GrayLevel[0]],
+      FontSize->16,
+      FontColor->GrayLevel[0]], 
+     StyleBox[
+      StyleBox[" ", "Subsection",
+       FontSize->18,
+       FontWeight->"Plain",
+       FontColor->GrayLevel[0]],
+      FontSize->16,
+      FontColor->GrayLevel[0]], 
+     StyleBox[
+      StyleBox["=", "Subsection",
+       FontSize->18,
+       FontWeight->"Plain",
+       FontColor->GrayLevel[0]],
+      FontSize->16,
+      FontColor->GrayLevel[0]], 
+     StyleBox[
+      StyleBox[" ", "Subsection",
+       FontSize->18,
+       FontWeight->"Plain",
+       FontColor->GrayLevel[0]],
+      FontSize->16,
+      FontColor->GrayLevel[0]], 
+     RowBox[{
+      RowBox[{
+       StyleBox[
+        StyleBox[
+         RowBox[{"21.10", ".2019"}], "Subsection",
+         FontSize->18,
+         FontWeight->"Plain",
+         FontColor->GrayLevel[0]],
+        FontSize->16,
+        FontColor->GrayLevel[0]], 
+       StyleBox[
+        StyleBox[" ", "Subsection",
+         FontSize->18,
+         FontWeight->"Plain",
+         FontColor->GrayLevel[0]],
+        FontSize->16,
+        FontColor->GrayLevel[0]], 
+       StyleBox[
+        StyleBox["-", "Subsection",
+         FontSize->18,
+         FontWeight->"Plain",
+         FontColor->GrayLevel[0]],
+        FontSize->16,
+        FontColor->GrayLevel[0]], 
+       StyleBox[
+        StyleBox[" ", "Subsection",
+         FontSize->18,
+         FontWeight->"Plain",
+         FontColor->GrayLevel[0]],
+        FontSize->16,
+        FontColor->GrayLevel[0]], 
+       RowBox[{
+        StyleBox[
+         StyleBox["date", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox[" ", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox["through", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox[" ", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox["which", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox[" ", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox["interest", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox[" ", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox["is", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox[" ", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox["being", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox[" ", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         RowBox[{
+          StyleBox["accrued", "Subsection",
+           FontSize->18,
+           FontWeight->"Plain",
+           FontColor->GrayLevel[0]], 
+          StyleBox[".", "Subsection",
+           FontSize->18,
+           FontWeight->"Plain",
+           FontColor->GrayLevel[0]], 
+          StyleBox[" ", "Subsection",
+           FontSize->18,
+           FontWeight->"Plain",
+           FontColor->GrayLevel[0]], 
+          RowBox[{
+           StyleBox["(", "Subsection",
+            FontSize->18,
+            FontWeight->"Plain",
+            FontColor->GrayLevel[0]], 
+           RowBox[{
+            StyleBox["settlement", "Subsection",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0]], 
+            StyleBox[" ", "Subsection",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0]], 
+            StyleBox["date", "Subsection",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0]], 
+            StyleBox[" ", "Subsection",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0]], 
+            StyleBox["of", "Subsection",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0]], 
+            StyleBox[" ", "Subsection",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0]], 
+            StyleBox["the", "Subsection",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0]], 
+            StyleBox[" ", "Subsection",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0]], 
+            StyleBox["trade", "Subsection",
+             FontSize->18,
+             FontWeight->"Plain",
+             FontColor->GrayLevel[0]]}], 
+           StyleBox[")", "Subsection",
+            FontSize->18,
+            FontWeight->"Plain",
+            FontColor->GrayLevel[0]]}]}],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         StyleBox["\[IndentingNewLine]", "Subsection",
+          FontSize->18,
+          FontWeight->"Plain",
+          FontColor->GrayLevel[0]],
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
+        StyleBox[
+         RowBox[{
+          StyleBox[
+           StyleBox["d", "Subsection",
+            FontSize->18,
+            FontWeight->"Plain"],
+           FontColor->GrayLevel[0]], 
+          StyleBox["ate3", "Subsection",
+           FontSize->18,
+           FontWeight->"Plain"]}]]}]}], 
+      StyleBox[" ", "Subsection",
+       FontSize->18,
+       FontWeight->"Plain"], 
+      StyleBox["=", "Subsection",
+       FontSize->18,
+       FontWeight->"Plain"], 
+      StyleBox[" ", "Subsection",
+       FontSize->18,
+       FontWeight->"Plain"], 
+      StyleBox[
+       RowBox[{"29.02", ".2019"}], "Subsection",
+       FontSize->18,
+       FontWeight->"Plain"]}]}]}], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->24,
+    FontColor->RGBColor[0.6, 0.4, 0.2],
+    Background->RGBColor[1, 0.925, 0.925]], 
+   StyleBox[
+    StyleBox[
+     RowBox[{"**", ")"}]],
+    FontSize->24,
+    FontColor->RGBColor[0.6, 0.4, 0.2],
+    Background->RGBColor[1, 0.925, 0.925]]}], 
+  StyleBox["\[IndentingNewLine]", "Subsection",
+   FontSize->18,
+   FontWeight->"Plain",
+   FontColor->GrayLevel[0]], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->12,
+   FontWeight->"Plain",
+   FontColor->RGBColor[0.6, 0.4, 0.2],
+   Background->GrayLevel[0.5]]}]], "Input",
+ CellDingbat->"\[HappySmiley]",
+ CellChangeTimes->{{3.7823068315163403`*^9, 3.782306866309452*^9}, {
+  3.782306907037159*^9, 3.782306912313168*^9}, {3.78230694957513*^9, 
+  3.7823070030654793`*^9}, {3.782307046028552*^9, 3.7823071630078783`*^9}, {
+  3.782307251282468*^9, 3.7823072551442957`*^9}, {3.782307291181985*^9, 
+  3.7823073195412397`*^9}, {3.782308747660668*^9, 
+  3.782308756506415*^9}},ExpressionUUID->"d0aa9c52-57c7-41fa-a280-\
+73b544fd16de"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"P", " ", "=", " ", "10000"}], " ", ";"}], "\[IndentingNewLine]", 
+   
+   RowBox[{
+    RowBox[{"r", " ", "=", " ", "0.1"}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"frequency", " ", "=", " ", "1.0"}], " ", ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"CleanPrice", " ", "=", " ", 
+    RowBox[{"0.9980", " ", "*", " ", "P", " "}]}]}]}]], "Input",
+ CellChangeTimes->{{3.782307959868903*^9, 3.782307971998554*^9}, {
+  3.7823087027691917`*^9, 3.7823087065579243`*^9}},
+ CellLabel->
+  "In[106]:=",ExpressionUUID->"64e51076-565e-4ab9-8413-e3e0596ba9ec"],
+
+Cell[BoxData["9980.`"], "Output",
+ CellChangeTimes->{3.782307960717105*^9, 3.7823087069071703`*^9},
+ CellLabel->
+  "Out[109]=",ExpressionUUID->"2326c386-1cec-46f6-88b7-5e6594cad41a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{
+      RowBox[{"30", "/", "360"}], " ", "US"}]}]}], " ", "**)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Years", " ", "=", " ", 
+     RowBox[{"2019", "-", "2019"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Months", " ", "=", " ", 
+     RowBox[{"10", " ", "-", " ", "2"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Days", " ", "=", " ", 
+     RowBox[{"21", " ", "-", " ", "30"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dayCount", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
+      RowBox[{"\[CapitalDelta]Months", "*", "30"}], " ", "+", 
+      "\[CapitalDelta]Days"}]}], "  ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{"dayCount", " ", "/", " ", "360"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{"DirtyPrice", " ", "=", " ", 
+    RowBox[{"CleanPrice", "+", "accruedIntrest"}]}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.7823068478366137`*^9, 3.7823068641986303`*^9}, {
+  3.782306920494628*^9, 3.7823069409287577`*^9}, {3.782307757052652*^9, 
+  3.782307826672977*^9}, {3.782307871766165*^9, 3.78230795656324*^9}, {
+  3.782308000934017*^9, 3.78230800501987*^9}, {3.7823081415430717`*^9, 
+  3.7823081467476397`*^9}},ExpressionUUID->"ca4fd01c-c36b-4b1c-83de-\
+ce960939f94f"],
+
+Cell[BoxData["641.6666666666667`"], "Output",
+ CellChangeTimes->{{3.782307868645626*^9, 3.782307926415895*^9}, 
+   3.782308005962709*^9},
+ CellLabel->"Out[98]=",ExpressionUUID->"909c6103-d790-425a-824b-723047474b11"],
+
+Cell[BoxData["10621.666666666666`"], "Output",
+ CellChangeTimes->{{3.782307868645626*^9, 3.782307926415895*^9}, 
+   3.782308005965744*^9},
+ CellLabel->"Out[99]=",ExpressionUUID->"87b824ba-a9f9-4f94-bb50-eae9dd411161"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{"30", 
+      RowBox[{"E", "/", "360"}]}]}]}], " ", "**)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Years", " ", "=", " ", 
+     RowBox[{"2019", "-", "2019"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Months", " ", "=", " ", 
+     RowBox[{"10", " ", "-", " ", "2"}]}], " ", ";"}], "\[IndentingNewLine]", 
+   
+   RowBox[{
+    RowBox[{"\[CapitalDelta]Days", " ", "=", " ", 
+     RowBox[{"21", " ", "-", " ", "28"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dayCount", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
+      RowBox[{"\[CapitalDelta]Months", "*", "30"}], " ", "+", 
+      "\[CapitalDelta]Days"}]}], "  ", ";"}], "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{"dayCount", " ", "/", " ", "360"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{"DirtyPrice", " ", "=", " ", 
+    RowBox[{"CleanPrice", "+", "accruedIntrest"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.782308154799036*^9, 3.78230816125358*^9}},
+ CellLabel->
+  "In[100]:=",ExpressionUUID->"94af7307-4dc9-41c5-ad9f-85248bf17274"],
+
+Cell[BoxData["647.2222222222223`"], "Output",
+ CellChangeTimes->{3.782308162369295*^9},
+ CellLabel->
+  "Out[104]=",ExpressionUUID->"e9c146c5-c7f5-4e0c-93ba-163896827a38"],
+
+Cell[BoxData["10627.222222222223`"], "Output",
+ CellChangeTimes->{3.782308162372838*^9},
+ CellLabel->
+  "Out[105]=",ExpressionUUID->"a665f652-6102-49cd-946d-9b1d0f0a7134"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{
+      RowBox[{"ACT", "/", "ACT"}], " ", 
+      RowBox[{"(", "ICMA", ")"}]}]}]}], " ", "**)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"dayDifference12", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "10", ",", "21"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"dayDifference13", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2020", ",", "2", ",", "29"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{
+      RowBox[{"dayDifference12", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], " ", "/", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"dayDifference13", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], " ", "*", " ", "frequency"}], 
+       ")"}]}]}]}], "\[IndentingNewLine]", 
+   RowBox[{"DirtyPrice", " ", "=", " ", 
+    RowBox[{"CleanPrice", "+", "accruedIntrest"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7823081851642027`*^9, 3.782308193895213*^9}, {
+  3.782308719984112*^9, 3.7823087203723297`*^9}, {3.782308772572048*^9, 
+  3.782308854257983*^9}},
+ CellLabel->
+  "In[113]:=",ExpressionUUID->"32bbb548-e487-4fe2-832f-94169ea70adc"],
+
+Cell[BoxData[
+ TemplateBox[{"235","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.782308838094295*^9, 3.782308855157464*^9}},
+ CellLabel->
+  "Out[113]=",ExpressionUUID->"846a5e90-6a7d-4f2e-b3d5-883be6078fc0"],
+
+Cell[BoxData[
+ TemplateBox[{"366","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.782308838094295*^9, 3.782308855165379*^9}},
+ CellLabel->
+  "Out[114]=",ExpressionUUID->"4cae2a74-4f38-4c6e-9cb6-834488ea3c64"],
+
+Cell[BoxData["642.0765027322404`"], "Output",
+ CellChangeTimes->{{3.782308838094295*^9, 3.782308855172905*^9}},
+ CellLabel->
+  "Out[115]=",ExpressionUUID->"8cc6668b-703f-4d86-8b33-157f6eb52881"],
+
+Cell[BoxData["10622.076502732241`"], "Output",
+ CellChangeTimes->{{3.782308838094295*^9, 3.7823088551766663`*^9}},
+ CellLabel->
+  "Out[116]=",ExpressionUUID->"fd287d71-b9e4-42df-bb17-f3d3896aa5c1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{"ACT", " ", "365", " ", 
+      RowBox[{"(", "fixed", ")"}]}]}]}], " ", "**)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"dayDifference", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "10", ",", "21"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{
+      RowBox[{"dayDifference", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "/", " ", "365"}]}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"DirtyPrice", " ", "=", " ", 
+    RowBox[{"CleanPrice", "+", "accruedIntrest"}]}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.7823088770665483`*^9, 3.782308912868679*^9}},
+ CellLabel->
+  "In[117]:=",ExpressionUUID->"186db182-1163-4472-b206-f502190059ba"],
+
+Cell[BoxData[
+ TemplateBox[{"235","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.78230891341285*^9},
+ CellLabel->
+  "Out[117]=",ExpressionUUID->"b9685b45-d017-47a3-8fe3-b55f5085902a"],
+
+Cell[BoxData["643.8356164383562`"], "Output",
+ CellChangeTimes->{3.782308913423697*^9},
+ CellLabel->
+  "Out[118]=",ExpressionUUID->"d1176002-a15e-4b4c-a76d-98b30f1b01a8"],
+
+Cell[BoxData["10623.835616438357`"], "Output",
+ CellChangeTimes->{3.782308913426601*^9},
+ CellLabel->
+  "Out[119]=",ExpressionUUID->"07d24841-038b-49df-8ee3-9f9793499683"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"*", " ", "count", " ", 
+    RowBox[{"convention", ":", " ", 
+     RowBox[{"ACT", " ", "360"}]}]}], " ", "**)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"dayDifference", " ", "=", " ", 
+    RowBox[{"DateDifference", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "2", ",", "28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2019", ",", "10", ",", "21"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"accruedIntrest", " ", "=", " ", 
+    RowBox[{"P", " ", "*", " ", "r", "*", " ", 
+     RowBox[{
+      RowBox[{"dayDifference", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "/", " ", "360"}]}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"DirtyPrice", " ", "=", " ", 
+    RowBox[{"CleanPrice", "+", "accruedIntrest"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.782308923164977*^9, 3.782308928517733*^9}},
+ CellLabel->
+  "In[120]:=",ExpressionUUID->"6b9711c2-e82e-462b-9d18-46853b6c6d5c"],
+
+Cell[BoxData[
+ TemplateBox[{"235","\"days\"","days","\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.7823089291144648`*^9},
+ CellLabel->
+  "Out[120]=",ExpressionUUID->"f41a9c94-f31f-4ccb-90e9-b0994beb5a62"],
+
+Cell[BoxData["652.7777777777778`"], "Output",
+ CellChangeTimes->{3.782308929125452*^9},
+ CellLabel->
+  "Out[121]=",ExpressionUUID->"349c2e40-8f08-4853-9ea2-81496e781b63"],
+
+Cell[BoxData["10632.777777777777`"], "Output",
+ CellChangeTimes->{3.7823089291276903`*^9},
+ CellLabel->
+  "Out[122]=",ExpressionUUID->"b1be95ac-fe09-4fec-ad91-660784eac8aa"]
+}, Open  ]]
+},
+WindowSize->{1296, 704},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 359, 8, 45, "Input",ExpressionUUID->"d38908f4-0090-4112-a740-d0c9a96a6bc5"],
+Cell[920, 30, 339, 7, 78, "Input",ExpressionUUID->"6039d5a5-1e3e-47e8-8d9d-70dd5da4bfb3"],
+Cell[CellGroupData[{
+Cell[1284, 41, 3745, 83, 538, "Input",ExpressionUUID->"ca2f15eb-cb9e-4cf2-a93f-5c70b9d87f19"],
+Cell[5032, 126, 227, 3, 35, "Output",ExpressionUUID->"42bbac20-0c03-49da-922b-59d24339a839"],
+Cell[5262, 131, 228, 3, 35, "Output",ExpressionUUID->"6da4e128-fe82-4516-8378-a953b06eee4b"],
+Cell[5493, 136, 226, 3, 35, "Output",ExpressionUUID->"fd00c79b-0c3b-479e-be86-d5510a15313a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5756, 144, 3539, 79, 515, "Input",ExpressionUUID->"83393306-aa5a-4e40-a3a4-2d0c6329f1b3"],
+Cell[9298, 225, 254, 3, 35, "Output",ExpressionUUID->"8f25dbcb-e0ee-411d-a48a-a4c07667504b"],
+Cell[9555, 230, 254, 3, 35, "Output",ExpressionUUID->"df26ba64-ca8f-4e27-8bc6-e0b05e594c22"],
+Cell[9812, 235, 251, 3, 35, "Output",ExpressionUUID->"9ed51e92-3eb5-4a5d-8aed-07d4d522df56"],
+Cell[10066, 240, 265, 3, 35, "Output",ExpressionUUID->"491d320d-319c-4b7f-b711-fad9c81b3b43"]
+}, Open  ]],
+Cell[10346, 246, 224, 3, 31, "Input",ExpressionUUID->"5a942909-9516-4bc7-bb8f-7f824b564bba"],
+Cell[CellGroupData[{
+Cell[10595, 253, 1344, 33, 239, "Input",ExpressionUUID->"787bcd29-4bb2-417e-b0d4-2850b9b25271"],
+Cell[11942, 288, 201, 3, 35, "Output",ExpressionUUID->"eb9c5cf8-6581-4383-aa25-80f3898c4fb4"],
+Cell[12146, 293, 203, 3, 35, "Output",ExpressionUUID->"c6f4aba5-bcb2-48d2-a497-e38bf7a33c0b"],
+Cell[12352, 298, 203, 3, 35, "Output",ExpressionUUID->"9d93ca6e-42a4-40cc-b3dc-2ac0312f9e57"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12592, 306, 2530, 66, 377, "Input",ExpressionUUID->"6acc879a-0c99-44a2-9f2b-6feacfa1e38a"],
+Cell[15125, 374, 211, 4, 39, "Output",ExpressionUUID->"b5a570e6-f132-40fb-b261-e050b16e632d"],
+Cell[15339, 380, 154, 2, 35, "Output",ExpressionUUID->"d2e297cf-85e3-4d95-a61b-1f94297446a5"],
+Cell[15496, 384, 211, 4, 39, "Output",ExpressionUUID->"1be3ad42-781e-4341-9697-1bbd69d416a3"],
+Cell[15710, 390, 154, 2, 35, "Output",ExpressionUUID->"838c56e0-be5c-442e-a7e0-6f370036d63f"],
+Cell[15867, 394, 211, 4, 39, "Output",ExpressionUUID->"47fea1df-2d4a-4530-88d2-c777caf48409"],
+Cell[16081, 400, 169, 2, 35, "Output",ExpressionUUID->"dc3c4b16-4518-4361-be95-0e0d5ac4123a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16287, 407, 2613, 67, 354, "Input",ExpressionUUID->"71c175ac-861c-4b1b-8211-04e0b70c680f"],
+Cell[18903, 476, 311, 6, 39, "Output",ExpressionUUID->"58c01b56-5f5f-4619-9eef-73d26e3ed395"],
+Cell[19217, 484, 265, 4, 35, "Output",ExpressionUUID->"6b67b390-03b1-4fd1-aa2c-cf89c94c9f72"],
+Cell[19485, 490, 309, 6, 39, "Output",ExpressionUUID->"61d32eeb-5dfe-4741-b966-7a1f84a7e40f"],
+Cell[19797, 498, 265, 4, 35, "Output",ExpressionUUID->"0efaad42-dfb4-4e80-9a7e-2610393c022a"],
+Cell[20065, 504, 309, 6, 39, "Output",ExpressionUUID->"11939cd4-c208-4c27-921a-f97c824418e0"],
+Cell[20377, 512, 264, 4, 35, "Output",ExpressionUUID->"e36c3104-d53f-4e3d-9080-8ce91e83c3af"]
+}, Open  ]],
+Cell[20656, 519, 14412, 451, 367, "Input",ExpressionUUID->"d0aa9c52-57c7-41fa-a280-73b544fd16de"],
+Cell[CellGroupData[{
+Cell[35093, 974, 650, 16, 124, "Input",ExpressionUUID->"64e51076-565e-4ab9-8413-e3e0596ba9ec"],
+Cell[35746, 992, 182, 3, 35, "Output",ExpressionUUID->"2326c386-1cec-46f6-88b7-5e6594cad41a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35965, 1000, 1645, 36, 239, "Input",ExpressionUUID->"ca4fd01c-c36b-4b1c-83de-ce960939f94f"],
+Cell[37613, 1038, 216, 3, 35, "Output",ExpressionUUID->"909c6103-d790-425a-824b-723047474b11"],
+Cell[37832, 1043, 217, 3, 35, "Output",ExpressionUUID->"87b824ba-a9f9-4f94-bb50-eae9dd411161"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38086, 1051, 1338, 31, 170, "Input",ExpressionUUID->"94af7307-4dc9-41c5-ad9f-85248bf17274"],
+Cell[39427, 1084, 170, 3, 35, "Output",ExpressionUUID->"e9c146c5-c7f5-4e0c-93ba-163896827a38"],
+Cell[39600, 1089, 171, 3, 35, "Output",ExpressionUUID->"a665f652-6102-49cd-946d-9b1d0f0a7134"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39808, 1097, 1611, 42, 147, "Input",ExpressionUUID->"32bbb548-e487-4fe2-832f-94169ea70adc"],
+Cell[41422, 1141, 239, 5, 39, "Output",ExpressionUUID->"846a5e90-6a7d-4f2e-b3d5-883be6078fc0"],
+Cell[41664, 1148, 239, 5, 39, "Output",ExpressionUUID->"4cae2a74-4f38-4c6e-9cb6-834488ea3c64"],
+Cell[41906, 1155, 194, 3, 35, "Output",ExpressionUUID->"8cc6668b-703f-4d86-8b33-157f6eb52881"],
+Cell[42103, 1160, 197, 3, 35, "Output",ExpressionUUID->"fd287d71-b9e4-42df-bb17-f3d3896aa5c1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42337, 1168, 1073, 28, 147, "Input",ExpressionUUID->"186db182-1163-4472-b206-f502190059ba"],
+Cell[43413, 1198, 214, 5, 39, "Output",ExpressionUUID->"b9685b45-d017-47a3-8fe3-b55f5085902a"],
+Cell[43630, 1205, 170, 3, 35, "Output",ExpressionUUID->"d1176002-a15e-4b4c-a76d-98b30f1b01a8"],
+Cell[43803, 1210, 171, 3, 35, "Output",ExpressionUUID->"07d24841-038b-49df-8ee3-9f9793499683"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44011, 1218, 1003, 26, 124, "Input",ExpressionUUID->"6b9711c2-e82e-462b-9d18-46853b6c6d5c"],
+Cell[45017, 1246, 217, 5, 39, "Output",ExpressionUUID->"f41a9c94-f31f-4ccb-90e9-b0994beb5a62"],
+Cell[45237, 1253, 170, 3, 35, "Output",ExpressionUUID->"349c2e40-8f08-4853-9ea2-81496e781b63"],
+Cell[45410, 1258, 173, 3, 68, "Output",ExpressionUUID->"b1be95ac-fe09-4fec-ad91-660784eac8aa"]
+}, Open  ]]
+}
+]
+*)
+
