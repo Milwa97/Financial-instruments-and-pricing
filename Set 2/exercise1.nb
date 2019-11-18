@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     51120,       1350]
-NotebookOptionsPosition[     45599,       1264]
-NotebookOutlinePosition[     45932,       1279]
-CellTagsIndexPosition[     45889,       1276]
+NotebookDataLength[     47378,       1238]
+NotebookOptionsPosition[     41864,       1152]
+NotebookOutlinePosition[     42197,       1167]
+CellTagsIndexPosition[     42154,       1164]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -210,18 +210,20 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"\[CapitalDelta]Days", " ", "=", " ", 
      RowBox[{"29", " ", "-", " ", "28"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"dayCount", " ", "=", " ", 
-    RowBox[{
-     RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
-     RowBox[{"\[CapitalDelta]Months", "*", "30"}], " ", "+", 
-     "\[CapitalDelta]Days"}]}], " ", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dayCount", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"\[CapitalDelta]Years", "*", "360"}], " ", "+", " ", 
+      RowBox[{"\[CapitalDelta]Months", "*", "30"}], " ", "+", 
+      "\[CapitalDelta]Days"}]}], " ", ";"}], "\[IndentingNewLine]", 
    RowBox[{"accruedIntrest", " ", "=", " ", 
     RowBox[{"P", " ", "*", " ", "r", "*", " ", 
      RowBox[{"dayCount", " ", "/", " ", "360"}]}]}]}]}]], "Input",
  CellChangeTimes->{{3.782220052291046*^9, 3.782220073569643*^9}, {
-  3.782220403626709*^9, 3.7822204634558573`*^9}, {3.78222146348285*^9, 
-  3.782221503289234*^9}},
- CellLabel->"In[20]:=",ExpressionUUID->"83393306-aa5a-4e40-a3a4-2d0c6329f1b3"],
+   3.782220403626709*^9, 3.7822204634558573`*^9}, {3.78222146348285*^9, 
+   3.782221503289234*^9}, 
+   3.782820426582683*^9},ExpressionUUID->"83393306-aa5a-4e40-a3a4-\
+2d0c6329f1b3"],
 
 Cell[BoxData["1000.`"], "Output",
  CellChangeTimes->{{3.7822204536141243`*^9, 3.782220465680663*^9}, {
@@ -582,9 +584,7 @@ Cell[BoxData[
    FontColor->GrayLevel[0]], 
   RowBox[{
    StyleBox[
-    StyleBox[
-     StyleBox[
-      RowBox[{"(", "*"}]], "Subsection",
+    StyleBox["(*", "Subsection",
      FontSize->18,
      FontWeight->"Plain",
      FontColor->GrayLevel[0]],
@@ -593,27 +593,23 @@ Cell[BoxData[
    RowBox[{
     StyleBox[
      StyleBox[
-      RowBox[{"*", " ", "The", " ", "spot", " ", "date", 
-       RowBox[{"(", 
-        RowBox[{"D", "+", "2"}], ")"}], " ", "in", " ", "case", " ", "of", 
-       " ", "17", "th", " ", "of", " ", "October", " ", 
-       RowBox[{"(", "Thursday", ")"}], " ", "is", " ", "21", "th", " ", "of", 
-       " ", "October", " ", 
-       RowBox[{"(", "Monday", ")"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"*", " ", "The", " ", "spot", " ", "date", 
+        RowBox[{"(", 
+         RowBox[{"D", "+", "2"}], ")"}], " ", "in", " ", "case", " ", "of", 
+        " ", "17", "th", " ", "of", " ", "October", " ", 
+        RowBox[{"(", "Thursday", ")"}], " ", "is", " ", "21", "th", " ", "of",
+         " ", "October", " ", 
+        RowBox[{"(", "Monday", ")"}]}], "\[IndentingNewLine]", 
        "\[IndentingNewLine]", 
-       StyleBox[
-        RowBox[{
-         StyleBox[
+       RowBox[{
+        StyleBox[
+         RowBox[{
           StyleBox[" ", "Section",
            FontSize->18,
            FontWeight->"Plain",
            FontColor->GrayLevel[0],
-           Background->GrayLevel[0.85]], "Section",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0],
-          Background->GrayLevel[0.85]], 
-         StyleBox[
+           Background->GrayLevel[0.85]], 
           StyleBox[
            StyleBox[" ", "Section",
             FontSize->18,
@@ -623,19 +619,13 @@ Cell[BoxData[
            FontSize->18,
            FontWeight->"Plain",
            FontColor->GrayLevel[0],
-           Background->GrayLevel[0.85]], "Section",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0],
-          Background->GrayLevel[0.85]]}]], 
-       StyleBox[
-        RowBox[{
-         StyleBox["  ", "Section",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0],
-          Background->GrayLevel[0.85]], 
-         StyleBox[
+           Background->GrayLevel[0.85]]}], "Section",
+         FontSize->18,
+         FontWeight->"Plain",
+         FontColor->GrayLevel[0],
+         Background->GrayLevel[0.85]], 
+        StyleBox[
+         RowBox[{"  ", 
           StyleBox[
            StyleBox[" ", "Section",
             FontSize->18,
@@ -645,11 +635,11 @@ Cell[BoxData[
            FontSize->18,
            FontWeight->"Plain",
            FontColor->GrayLevel[0],
-           Background->GrayLevel[0.85]], "Section",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0],
-          Background->GrayLevel[0.85]]}]], "date1"}], "Subsection",
+           Background->GrayLevel[0.85]]}], "Section",
+         FontSize->18,
+         FontWeight->"Plain",
+         FontColor->GrayLevel[0],
+         Background->GrayLevel[0.85]], "date1"}]}], "Subsection",
       FontSize->18,
       FontWeight->"Plain",
       FontColor->GrayLevel[0]],
@@ -680,34 +670,16 @@ Cell[BoxData[
      StyleBox[
       StyleBox[
        RowBox[{
-        RowBox[{"28.02", ".2019"}], " ", "-", " ", 
         RowBox[{
-        "starting", " ", "date", " ", "for", " ", "the", " ", "accrual", 
-         StyleBox[
-          StyleBox[
-           StyleBox[
-            StyleBox[
-             StyleBox["\[IndentingNewLine]", "Section",
-              FontSize->18,
-              FontWeight->"Plain",
-              FontColor->GrayLevel[0],
-              Background->GrayLevel[0.85]], "Section",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0],
-             Background->GrayLevel[0.85]], "Section",
-            FontSize->18,
-            FontWeight->"Plain",
-            FontColor->GrayLevel[0],
-            Background->GrayLevel[0.85]], "Section",
-           FontSize->18,
-           FontWeight->"Plain",
-           FontColor->GrayLevel[0],
-           Background->GrayLevel[0.85]], "Section",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0],
-          Background->GrayLevel[0.85]], "date2"}]}], "Subsection",
+         RowBox[{"28.02", ".2019"}], " ", "-", " ", 
+         RowBox[{
+         "starting", " ", "date", " ", "for", " ", "the", " ", "accrual"}]}], 
+        
+        StyleBox["\[IndentingNewLine]", "Section",
+         FontSize->18,
+         FontWeight->"Plain",
+         FontColor->GrayLevel[0],
+         Background->GrayLevel[0.85]], "date2"}], "Subsection",
        FontSize->18,
        FontWeight->"Plain",
        FontColor->GrayLevel[0]],
@@ -744,11 +716,7 @@ Cell[BoxData[
          FontColor->GrayLevel[0]],
         FontSize->16,
         FontColor->GrayLevel[0]], 
-       StyleBox[
-        StyleBox[" ", "Subsection",
-         FontSize->18,
-         FontWeight->"Plain",
-         FontColor->GrayLevel[0]],
+       StyleBox[" ",
         FontSize->16,
         FontColor->GrayLevel[0]], 
        StyleBox[
@@ -773,11 +741,7 @@ Cell[BoxData[
           FontColor->GrayLevel[0]],
          FontSize->16,
          FontColor->GrayLevel[0]], 
-        StyleBox[
-         StyleBox[" ", "Subsection",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0]],
+        StyleBox[" ",
          FontSize->16,
          FontColor->GrayLevel[0]], 
         StyleBox[
@@ -787,11 +751,7 @@ Cell[BoxData[
           FontColor->GrayLevel[0]],
          FontSize->16,
          FontColor->GrayLevel[0]], 
-        StyleBox[
-         StyleBox[" ", "Subsection",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0]],
+        StyleBox[" ",
          FontSize->16,
          FontColor->GrayLevel[0]], 
         StyleBox[
@@ -801,11 +761,7 @@ Cell[BoxData[
           FontColor->GrayLevel[0]],
          FontSize->16,
          FontColor->GrayLevel[0]], 
-        StyleBox[
-         StyleBox[" ", "Subsection",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0]],
+        StyleBox[" ",
          FontSize->16,
          FontColor->GrayLevel[0]], 
         StyleBox[
@@ -815,11 +771,7 @@ Cell[BoxData[
           FontColor->GrayLevel[0]],
          FontSize->16,
          FontColor->GrayLevel[0]], 
-        StyleBox[
-         StyleBox[" ", "Subsection",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0]],
+        StyleBox[" ",
          FontSize->16,
          FontColor->GrayLevel[0]], 
         StyleBox[
@@ -829,11 +781,7 @@ Cell[BoxData[
           FontColor->GrayLevel[0]],
          FontSize->16,
          FontColor->GrayLevel[0]], 
-        StyleBox[
-         StyleBox[" ", "Subsection",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0]],
+        StyleBox[" ",
          FontSize->16,
          FontColor->GrayLevel[0]], 
         StyleBox[
@@ -843,80 +791,22 @@ Cell[BoxData[
           FontColor->GrayLevel[0]],
          FontSize->16,
          FontColor->GrayLevel[0]], 
+        StyleBox[" ",
+         FontSize->16,
+         FontColor->GrayLevel[0]], 
         StyleBox[
-         StyleBox[" ", "Subsection",
+         StyleBox[
+          RowBox[{"accrued", ".", " ", 
+           RowBox[{"(", 
+            RowBox[{
+            "settlement", " ", "date", " ", "of", " ", "the", " ", "trade"}], 
+            ")"}]}], "Subsection",
           FontSize->18,
           FontWeight->"Plain",
           FontColor->GrayLevel[0]],
          FontSize->16,
          FontColor->GrayLevel[0]], 
-        StyleBox[
-         RowBox[{
-          StyleBox["accrued", "Subsection",
-           FontSize->18,
-           FontWeight->"Plain",
-           FontColor->GrayLevel[0]], 
-          StyleBox[".", "Subsection",
-           FontSize->18,
-           FontWeight->"Plain",
-           FontColor->GrayLevel[0]], 
-          StyleBox[" ", "Subsection",
-           FontSize->18,
-           FontWeight->"Plain",
-           FontColor->GrayLevel[0]], 
-          RowBox[{
-           StyleBox["(", "Subsection",
-            FontSize->18,
-            FontWeight->"Plain",
-            FontColor->GrayLevel[0]], 
-           RowBox[{
-            StyleBox["settlement", "Subsection",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0]], 
-            StyleBox[" ", "Subsection",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0]], 
-            StyleBox["date", "Subsection",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0]], 
-            StyleBox[" ", "Subsection",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0]], 
-            StyleBox["of", "Subsection",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0]], 
-            StyleBox[" ", "Subsection",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0]], 
-            StyleBox["the", "Subsection",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0]], 
-            StyleBox[" ", "Subsection",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0]], 
-            StyleBox["trade", "Subsection",
-             FontSize->18,
-             FontWeight->"Plain",
-             FontColor->GrayLevel[0]]}], 
-           StyleBox[")", "Subsection",
-            FontSize->18,
-            FontWeight->"Plain",
-            FontColor->GrayLevel[0]]}]}],
-         FontSize->16,
-         FontColor->GrayLevel[0]], 
-        StyleBox[
-         StyleBox["\[IndentingNewLine]", "Subsection",
-          FontSize->18,
-          FontWeight->"Plain",
-          FontColor->GrayLevel[0]],
+        StyleBox["\[IndentingNewLine]",
          FontSize->16,
          FontColor->GrayLevel[0]], 
         StyleBox[
@@ -946,9 +836,7 @@ Cell[BoxData[
     FontSize->24,
     FontColor->RGBColor[0.6, 0.4, 0.2],
     Background->RGBColor[1, 0.925, 0.925]], 
-   StyleBox[
-    StyleBox[
-     RowBox[{"**", ")"}]],
+   StyleBox["**)",
     FontSize->24,
     FontColor->RGBColor[0.6, 0.4, 0.2],
     Background->RGBColor[1, 0.925, 0.925]]}], 
@@ -1287,70 +1175,70 @@ Cell[5262, 131, 228, 3, 35, "Output",ExpressionUUID->"6da4e128-fe82-4516-8378-a9
 Cell[5493, 136, 226, 3, 35, "Output",ExpressionUUID->"fd00c79b-0c3b-479e-be86-d5510a15313a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5756, 144, 3539, 79, 515, "Input",ExpressionUUID->"83393306-aa5a-4e40-a3a4-2d0c6329f1b3"],
-Cell[9298, 225, 254, 3, 35, "Output",ExpressionUUID->"8f25dbcb-e0ee-411d-a48a-a4c07667504b"],
-Cell[9555, 230, 254, 3, 35, "Output",ExpressionUUID->"df26ba64-ca8f-4e27-8bc6-e0b05e594c22"],
-Cell[9812, 235, 251, 3, 35, "Output",ExpressionUUID->"9ed51e92-3eb5-4a5d-8aed-07d4d522df56"],
-Cell[10066, 240, 265, 3, 35, "Output",ExpressionUUID->"491d320d-319c-4b7f-b711-fad9c81b3b43"]
+Cell[5756, 144, 3569, 81, 515, "Input",ExpressionUUID->"83393306-aa5a-4e40-a3a4-2d0c6329f1b3"],
+Cell[9328, 227, 254, 3, 35, "Output",ExpressionUUID->"8f25dbcb-e0ee-411d-a48a-a4c07667504b"],
+Cell[9585, 232, 254, 3, 35, "Output",ExpressionUUID->"df26ba64-ca8f-4e27-8bc6-e0b05e594c22"],
+Cell[9842, 237, 251, 3, 35, "Output",ExpressionUUID->"9ed51e92-3eb5-4a5d-8aed-07d4d522df56"],
+Cell[10096, 242, 265, 3, 35, "Output",ExpressionUUID->"491d320d-319c-4b7f-b711-fad9c81b3b43"]
 }, Open  ]],
-Cell[10346, 246, 224, 3, 31, "Input",ExpressionUUID->"5a942909-9516-4bc7-bb8f-7f824b564bba"],
+Cell[10376, 248, 224, 3, 31, "Input",ExpressionUUID->"5a942909-9516-4bc7-bb8f-7f824b564bba"],
 Cell[CellGroupData[{
-Cell[10595, 253, 1344, 33, 239, "Input",ExpressionUUID->"787bcd29-4bb2-417e-b0d4-2850b9b25271"],
-Cell[11942, 288, 201, 3, 35, "Output",ExpressionUUID->"eb9c5cf8-6581-4383-aa25-80f3898c4fb4"],
-Cell[12146, 293, 203, 3, 35, "Output",ExpressionUUID->"c6f4aba5-bcb2-48d2-a497-e38bf7a33c0b"],
-Cell[12352, 298, 203, 3, 35, "Output",ExpressionUUID->"9d93ca6e-42a4-40cc-b3dc-2ac0312f9e57"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[12592, 306, 2530, 66, 377, "Input",ExpressionUUID->"6acc879a-0c99-44a2-9f2b-6feacfa1e38a"],
-Cell[15125, 374, 211, 4, 39, "Output",ExpressionUUID->"b5a570e6-f132-40fb-b261-e050b16e632d"],
-Cell[15339, 380, 154, 2, 35, "Output",ExpressionUUID->"d2e297cf-85e3-4d95-a61b-1f94297446a5"],
-Cell[15496, 384, 211, 4, 39, "Output",ExpressionUUID->"1be3ad42-781e-4341-9697-1bbd69d416a3"],
-Cell[15710, 390, 154, 2, 35, "Output",ExpressionUUID->"838c56e0-be5c-442e-a7e0-6f370036d63f"],
-Cell[15867, 394, 211, 4, 39, "Output",ExpressionUUID->"47fea1df-2d4a-4530-88d2-c777caf48409"],
-Cell[16081, 400, 169, 2, 35, "Output",ExpressionUUID->"dc3c4b16-4518-4361-be95-0e0d5ac4123a"]
+Cell[10625, 255, 1344, 33, 239, "Input",ExpressionUUID->"787bcd29-4bb2-417e-b0d4-2850b9b25271"],
+Cell[11972, 290, 201, 3, 35, "Output",ExpressionUUID->"eb9c5cf8-6581-4383-aa25-80f3898c4fb4"],
+Cell[12176, 295, 203, 3, 35, "Output",ExpressionUUID->"c6f4aba5-bcb2-48d2-a497-e38bf7a33c0b"],
+Cell[12382, 300, 203, 3, 35, "Output",ExpressionUUID->"9d93ca6e-42a4-40cc-b3dc-2ac0312f9e57"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16287, 407, 2613, 67, 354, "Input",ExpressionUUID->"71c175ac-861c-4b1b-8211-04e0b70c680f"],
-Cell[18903, 476, 311, 6, 39, "Output",ExpressionUUID->"58c01b56-5f5f-4619-9eef-73d26e3ed395"],
-Cell[19217, 484, 265, 4, 35, "Output",ExpressionUUID->"6b67b390-03b1-4fd1-aa2c-cf89c94c9f72"],
-Cell[19485, 490, 309, 6, 39, "Output",ExpressionUUID->"61d32eeb-5dfe-4741-b966-7a1f84a7e40f"],
-Cell[19797, 498, 265, 4, 35, "Output",ExpressionUUID->"0efaad42-dfb4-4e80-9a7e-2610393c022a"],
-Cell[20065, 504, 309, 6, 39, "Output",ExpressionUUID->"11939cd4-c208-4c27-921a-f97c824418e0"],
-Cell[20377, 512, 264, 4, 35, "Output",ExpressionUUID->"e36c3104-d53f-4e3d-9080-8ce91e83c3af"]
-}, Open  ]],
-Cell[20656, 519, 14412, 451, 367, "Input",ExpressionUUID->"d0aa9c52-57c7-41fa-a280-73b544fd16de"],
-Cell[CellGroupData[{
-Cell[35093, 974, 650, 16, 124, "Input",ExpressionUUID->"64e51076-565e-4ab9-8413-e3e0596ba9ec"],
-Cell[35746, 992, 182, 3, 35, "Output",ExpressionUUID->"2326c386-1cec-46f6-88b7-5e6594cad41a"]
+Cell[12622, 308, 2530, 66, 377, "Input",ExpressionUUID->"6acc879a-0c99-44a2-9f2b-6feacfa1e38a"],
+Cell[15155, 376, 211, 4, 39, "Output",ExpressionUUID->"b5a570e6-f132-40fb-b261-e050b16e632d"],
+Cell[15369, 382, 154, 2, 35, "Output",ExpressionUUID->"d2e297cf-85e3-4d95-a61b-1f94297446a5"],
+Cell[15526, 386, 211, 4, 39, "Output",ExpressionUUID->"1be3ad42-781e-4341-9697-1bbd69d416a3"],
+Cell[15740, 392, 154, 2, 35, "Output",ExpressionUUID->"838c56e0-be5c-442e-a7e0-6f370036d63f"],
+Cell[15897, 396, 211, 4, 39, "Output",ExpressionUUID->"47fea1df-2d4a-4530-88d2-c777caf48409"],
+Cell[16111, 402, 169, 2, 35, "Output",ExpressionUUID->"dc3c4b16-4518-4361-be95-0e0d5ac4123a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35965, 1000, 1645, 36, 239, "Input",ExpressionUUID->"ca4fd01c-c36b-4b1c-83de-ce960939f94f"],
-Cell[37613, 1038, 216, 3, 35, "Output",ExpressionUUID->"909c6103-d790-425a-824b-723047474b11"],
-Cell[37832, 1043, 217, 3, 35, "Output",ExpressionUUID->"87b824ba-a9f9-4f94-bb50-eae9dd411161"]
+Cell[16317, 409, 2613, 67, 354, "Input",ExpressionUUID->"71c175ac-861c-4b1b-8211-04e0b70c680f"],
+Cell[18933, 478, 311, 6, 39, "Output",ExpressionUUID->"58c01b56-5f5f-4619-9eef-73d26e3ed395"],
+Cell[19247, 486, 265, 4, 35, "Output",ExpressionUUID->"6b67b390-03b1-4fd1-aa2c-cf89c94c9f72"],
+Cell[19515, 492, 309, 6, 39, "Output",ExpressionUUID->"61d32eeb-5dfe-4741-b966-7a1f84a7e40f"],
+Cell[19827, 500, 265, 4, 35, "Output",ExpressionUUID->"0efaad42-dfb4-4e80-9a7e-2610393c022a"],
+Cell[20095, 506, 309, 6, 39, "Output",ExpressionUUID->"11939cd4-c208-4c27-921a-f97c824418e0"],
+Cell[20407, 514, 264, 4, 35, "Output",ExpressionUUID->"e36c3104-d53f-4e3d-9080-8ce91e83c3af"]
+}, Open  ]],
+Cell[20686, 521, 10647, 337, 367, "Input",ExpressionUUID->"d0aa9c52-57c7-41fa-a280-73b544fd16de"],
+Cell[CellGroupData[{
+Cell[31358, 862, 650, 16, 124, "Input",ExpressionUUID->"64e51076-565e-4ab9-8413-e3e0596ba9ec"],
+Cell[32011, 880, 182, 3, 35, "Output",ExpressionUUID->"2326c386-1cec-46f6-88b7-5e6594cad41a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38086, 1051, 1338, 31, 170, "Input",ExpressionUUID->"94af7307-4dc9-41c5-ad9f-85248bf17274"],
-Cell[39427, 1084, 170, 3, 35, "Output",ExpressionUUID->"e9c146c5-c7f5-4e0c-93ba-163896827a38"],
-Cell[39600, 1089, 171, 3, 35, "Output",ExpressionUUID->"a665f652-6102-49cd-946d-9b1d0f0a7134"]
+Cell[32230, 888, 1645, 36, 239, "Input",ExpressionUUID->"ca4fd01c-c36b-4b1c-83de-ce960939f94f"],
+Cell[33878, 926, 216, 3, 35, "Output",ExpressionUUID->"909c6103-d790-425a-824b-723047474b11"],
+Cell[34097, 931, 217, 3, 35, "Output",ExpressionUUID->"87b824ba-a9f9-4f94-bb50-eae9dd411161"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39808, 1097, 1611, 42, 147, "Input",ExpressionUUID->"32bbb548-e487-4fe2-832f-94169ea70adc"],
-Cell[41422, 1141, 239, 5, 39, "Output",ExpressionUUID->"846a5e90-6a7d-4f2e-b3d5-883be6078fc0"],
-Cell[41664, 1148, 239, 5, 39, "Output",ExpressionUUID->"4cae2a74-4f38-4c6e-9cb6-834488ea3c64"],
-Cell[41906, 1155, 194, 3, 35, "Output",ExpressionUUID->"8cc6668b-703f-4d86-8b33-157f6eb52881"],
-Cell[42103, 1160, 197, 3, 35, "Output",ExpressionUUID->"fd287d71-b9e4-42df-bb17-f3d3896aa5c1"]
+Cell[34351, 939, 1338, 31, 170, "Input",ExpressionUUID->"94af7307-4dc9-41c5-ad9f-85248bf17274"],
+Cell[35692, 972, 170, 3, 35, "Output",ExpressionUUID->"e9c146c5-c7f5-4e0c-93ba-163896827a38"],
+Cell[35865, 977, 171, 3, 35, "Output",ExpressionUUID->"a665f652-6102-49cd-946d-9b1d0f0a7134"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[42337, 1168, 1073, 28, 147, "Input",ExpressionUUID->"186db182-1163-4472-b206-f502190059ba"],
-Cell[43413, 1198, 214, 5, 39, "Output",ExpressionUUID->"b9685b45-d017-47a3-8fe3-b55f5085902a"],
-Cell[43630, 1205, 170, 3, 35, "Output",ExpressionUUID->"d1176002-a15e-4b4c-a76d-98b30f1b01a8"],
-Cell[43803, 1210, 171, 3, 35, "Output",ExpressionUUID->"07d24841-038b-49df-8ee3-9f9793499683"]
+Cell[36073, 985, 1611, 42, 147, "Input",ExpressionUUID->"32bbb548-e487-4fe2-832f-94169ea70adc"],
+Cell[37687, 1029, 239, 5, 39, "Output",ExpressionUUID->"846a5e90-6a7d-4f2e-b3d5-883be6078fc0"],
+Cell[37929, 1036, 239, 5, 39, "Output",ExpressionUUID->"4cae2a74-4f38-4c6e-9cb6-834488ea3c64"],
+Cell[38171, 1043, 194, 3, 35, "Output",ExpressionUUID->"8cc6668b-703f-4d86-8b33-157f6eb52881"],
+Cell[38368, 1048, 197, 3, 35, "Output",ExpressionUUID->"fd287d71-b9e4-42df-bb17-f3d3896aa5c1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[44011, 1218, 1003, 26, 124, "Input",ExpressionUUID->"6b9711c2-e82e-462b-9d18-46853b6c6d5c"],
-Cell[45017, 1246, 217, 5, 39, "Output",ExpressionUUID->"f41a9c94-f31f-4ccb-90e9-b0994beb5a62"],
-Cell[45237, 1253, 170, 3, 35, "Output",ExpressionUUID->"349c2e40-8f08-4853-9ea2-81496e781b63"],
-Cell[45410, 1258, 173, 3, 68, "Output",ExpressionUUID->"b1be95ac-fe09-4fec-ad91-660784eac8aa"]
+Cell[38602, 1056, 1073, 28, 147, "Input",ExpressionUUID->"186db182-1163-4472-b206-f502190059ba"],
+Cell[39678, 1086, 214, 5, 39, "Output",ExpressionUUID->"b9685b45-d017-47a3-8fe3-b55f5085902a"],
+Cell[39895, 1093, 170, 3, 35, "Output",ExpressionUUID->"d1176002-a15e-4b4c-a76d-98b30f1b01a8"],
+Cell[40068, 1098, 171, 3, 35, "Output",ExpressionUUID->"07d24841-038b-49df-8ee3-9f9793499683"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40276, 1106, 1003, 26, 124, "Input",ExpressionUUID->"6b9711c2-e82e-462b-9d18-46853b6c6d5c"],
+Cell[41282, 1134, 217, 5, 39, "Output",ExpressionUUID->"f41a9c94-f31f-4ccb-90e9-b0994beb5a62"],
+Cell[41502, 1141, 170, 3, 35, "Output",ExpressionUUID->"349c2e40-8f08-4853-9ea2-81496e781b63"],
+Cell[41675, 1146, 173, 3, 35, "Output",ExpressionUUID->"b1be95ac-fe09-4fec-ad91-660784eac8aa"]
 }, Open  ]]
 }
 ]
